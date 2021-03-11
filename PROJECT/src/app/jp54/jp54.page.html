@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+ </ion-buttons>
+ <ion-title class="ion-text-center">JP54</ion-title>
+ </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div class="ion-padding">
+  
+    <ion-text color="dark">
+      <h5 class="ion-text-center">AVIATION KEROSENE COLONIAL GRADE 54 (JET FUEL)</h5>
+    </ion-text>
+    <p style="text-align: justify;">Jet Propulsion Colonial Grade 54 (JP54) is an aviation fuel. During the refining process of JP54 only 15% of
+       the crude oil is made up of the jet fuel and the rest of the grade is used for different products such as plastic.</p>
+    <p style="text-align: justify;">The jet fuel powers gas turbine aircraft engines. It’s the most used low sulphur content kerosene worldwide.
+       Colonial JP54 is similar to Jet A except the energy is 18.4 mj/kg compared to the 42.8 mj/kg of Jet A. There is also a slight difference in additives.</p>
+    <p style="text-align: justify;">Aviation Kerosene standards are published as GOST–10227–86. The standard consists of different properties.
+       JP54 is not a distillate like Gas oil or diesel, it’s a kerosene. It separates paraffin and gasolines in the refinery. It is not used by
+        commercial jet lines and is not used by Military aircraft. Military grade jet fuel is delivered directly by the refineries since they require special additives.</p>
+    <p style="text-align: justify;">Jet A specification fuel has been used in the United States since the 1950s and is usually not available outside the United
+       States and a few Canadian airports such as Toronto and Vancouver, whereas Jet A-1 is the standard specification fuel used in the rest 
+       of the world other than the former Soviet states where TS-1 is the most common standard. Both Jet A and Jet A-1 have a flash point higher
+        than 38 °C (100 °F), with an autoignition temperature of 210 °C (410 °F).</p>
+    </div>
+  </ion-card>
+
+  <ion-card [routerLink]="['/order']" routerLinkActive="router-link-active">
+    <img src="assets/purchase.png">
+    <ion-text color="dark">
+      <div class="ion-text-center">If you are a serious buyer, you can certainly fill it easily Our Online Purchase Form</div>
+    </ion-text>
+  </ion-card>
+
+  <ion-footer >
+    <ion-toolbar color="primary">
+      <div class="ion-text-center">Copyright © 2016 GNGROUP (M) SDN.BHD. | All Rights Reserved.</div>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

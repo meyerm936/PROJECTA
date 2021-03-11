@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+ </ion-buttons>
+ <ion-title class="ion-text-center">Jet A1</ion-title>
+ </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div class="ion-padding">
+  
+    <ion-text color="dark">
+      <h5 class="ion-text-center">Aviation Jet Fuel A-1</h5>
+    </ion-text>
+    <p style="text-align: justify;">Jet fuel is a type of aviation fuel designed for use in aircraft powered by gas-turbine engines. It is clear to straw-coloured in appearance. 
+      The most commonly used fuels for commercial aviation are Jet A and Jet A-1 which are produced to a standardized international specification. The only other jet fuel commonly 
+      used in civilian turbine-engine powered aviation is Jet B which is used for its enhanced cold-weather performance. Jet fuel is a mixture of a large number of different hydrocarbons. Kerosene-type jet fuel (including Jet A and Jet A-1) has a carbon number distribution between about 8 and 16 carbon numbers (carbon atoms per molecule); wide-cut or naphtha-type jet fuel (including Jet B), between about 5 and 15 carbon numbers.</p>
+    <p style="text-align: justify;">Aviation fuel or Jet Fuel is a specialized type of petroleum-based fuel used to power aircraft; it is generally of a higher quality than fuels
+       used in less critical applications such as heating or road transport, and often contains additives to reduce the risk of icing or explosion due to high temperatures, amongst other properties.</p>
+    <p style="text-align: justify;">Jet A specification fuel has been used in the United States since the 1950s. 
+      It is usually not available outside the United States and a few Canadian airports such as Toronto and Vancouver, whereas Jet A-1 is the standard specification fuel used in the rest of the world other than the former Soviet states where TS-1 is the most common standard. Both Jet A and Jet A-1 have a flash point higher than 38 °C (100 °F), with an auto ignition temperature of 210 °C (410 °F).</p>
+    </div>
+    </ion-card>
+
+    <ion-card [routerLink]="['/order']" routerLinkActive="router-link-active">
+      <img src="assets/purchase.png">
+      <ion-text color="dark">
+        <div class="ion-text-center">If you are a serious buyer, you can certainly fill it easily Our Online Purchase Form</div>
+      </ion-text>
+    </ion-card>
+    
+  <ion-footer >
+    <ion-toolbar color="primary">
+      <div class="ion-text-center">Copyright © 2016 GNGROUP (M) SDN.BHD. | All Rights Reserved.</div>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

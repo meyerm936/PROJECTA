@@ -1,0 +1,220 @@
+<ion-app>
+  <ion-menu side="start" content-id="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item [routerLink]="['/home']" routerLinkActive="router-link-active">
+          <ion-icon name="home" slot="start"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/about']" routerLinkActive="router-link-active">
+          <ion-icon name="information" slot="start"></ion-icon>
+          <ion-label>About Us</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/petroleum']" routerLinkActive="router-link-active">
+          <ion-icon name="speedometer" slot="start"></ion-icon>
+          <ion-label>Petroleum Oil</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/blacklisted']" routerLinkActive="router-link-active">
+          <ion-icon name="list" slot="start"></ion-icon>
+          <ion-label>Blacklisted</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/contact']" routerLinkActive="router-link-active">
+          <ion-icon name="call" slot="start"></ion-icon>
+          <ion-label>Contact Us</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/faq']" routerLinkActive="router-link-active">
+          <ion-icon name="help" slot="start"></ion-icon>
+          <ion-label>FAQ's</ion-label>
+        </ion-item>
+        
+        
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <div class="container ion-text-center">
+        <img src="assets/gng.png" alt="" >
+      </div>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content [fullscreen]="true">
+      <div class="container1 ion-text-center">
+
+      <ion-slides #sliders (ionSlidesDiLoad)='sliderDidLoad(sliders)'pager='true' [options]='slideOpts' >
+        <ion-slide>
+            <img src="assets/slide1.png" >
+        </ion-slide>
+
+        <ion-slide>     
+            <img src="assets/slide2.png" > 
+        </ion-slide>
+
+        <ion-slide>
+            <img src="assets/slide3.png" >
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/slide4.png" >
+      </ion-slide>
+
+      <ion-slide>
+        <img src="assets/slide5.png" >
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/slide6.png" >
+  </ion-slide>
+
+  <ion-slide>
+    <img src="assets/slide7.png" >
+</ion-slide>
+
+<ion-slide>
+  <img src="assets/slide8.png" >
+</ion-slide>
+
+<ion-slide>
+  <img src="assets/slide9.png" >
+</ion-slide>
+
+<ion-slide>
+  <img src="assets/slide10.png" >
+</ion-slide>
+
+<ion-slide>
+  <img src="assets/slide11.png" >
+</ion-slide>
+
+<ion-slide>
+  <img src="assets/slide12.png" >
+</ion-slide>
+
+<ion-slide>
+  <img src="assets/slide13.png" >
+</ion-slide>
+
+<ion-slide>
+  <img src="assets/slide14.png" >
+</ion-slide>
+
+<ion-slide>
+  <img src="assets/slide15.png" >
+</ion-slide>
+
+      </ion-slides>
+
+    </div>  
+
+    <div class="ion-padding">
+      <ion-card>
+        <ion-card-header>         
+          <ion-card-title class="ion-text-center">Petroleum Menu</ion-card-title>        
+        </ion-card-header>
+        
+        <img src="assets/petroleummenu.jpg" >
+        <ion-text color="dark">
+        <div class="ion-text-center">On our Petroleum List:</div>
+        </ion-text>
+        <ion-card-content>
+          <p>1. FCO CIF & FOB Russian Oils</p>
+          <p>2. FCO CIF & FOB Malaysia Oils</p>
+          <p>3. Document Bank</p>
+          <p>4. Shipping & Marine Information</p>
+          <p>5. NCND + IMPFA Commission information</p>
+          <p>6. Information About Products</p>
+                 
+        </ion-card-content>
+        <ion-button class="ion-text-center" [routerLink]="['/petroleum']" routerLinkActive="router-link-active" expand="block">
+          Click Here For More
+        </ion-button>   
+      </ion-card>
+      
+    <ion-card>
+      <img src="assets/redbarrel.jfif" >
+      <ion-text color="dark">
+            <div class="ion-text-center">ABOUT GNGROUP IN THE WORLD TRADING, EXPORT AND IMPORT COMMODITIES PETROLEUM OILS</div> 
+            </ion-text>
+            <div class="ion-text-center"><p>GNGROUP is based in Kuala Lumpur, Malaysia and Singapore. The operations are mainly concentrated in Europe, the United States,
+              Asia and Southeast Asia, Thailand, Myanmar, Cambodia, Laos, Vietnam, the Philippines and Indonesia.</p></div> 
+              <ion-button class="ion-text-center" [routerLink]="['/about']" routerLinkActive="router-link-active" expand="block">
+                More Info
+              </ion-button>
+    </ion-card> 
+    
+    <ion-card>
+      <video 
+       width="100%"
+       controls="controls"
+       preload="metadata"
+       webkit-playsinline="webkit-playsinline"
+       class="videoPlayer">
+       <source src="assets/FCO2.mp4" type="video/mp4"> 
+       </video>
+       <p></p>
+      <ion-text color="primary">
+            <div class="ion-text-center">"NOTHING IS HIDDEN JUST ALL THE TRUTH"</div> 
+            </ion-text>         
+    </ion-card>
+
+    <ion-card>
+      <img src="assets/blacklist.jpg" >
+      <ion-text color="dark">
+            <div class="ion-text-center">BLACKLIST</div> 
+            </ion-text>
+            <div><p style="text-align: justify;">BLACKLISTED BUYER & SUPPLIER, TANK FARM, SHIPPING & AGENTS</p>
+              <p style="text-align: justify;">There is Blacklist list buyers, agents, supplier with history, 
+              evidence and warnings that have been recorded in our data</p>
+              <p style="text-align: justify;">We do not intend to display it just for fulfilling responsibility and 
+              justice on our burdens and loses for believing  in them</p></div> 
+              <ion-button class="ion-text-center" [routerLink]="['/blacklisted']" routerLinkActive="router-link-active" expand="block">
+                Find Out Now
+              </ion-button>
+    </ion-card>
+    
+    <ion-card>
+      <video 
+       width="100%"
+       controls="controls"
+       preload="metadata"
+       webkit-playsinline="webkit-playsinline"
+       class="videoPlayer">
+       <source src="assets/FCO.mp4" type="video/mp4"> 
+       </video>
+       <p></p>
+      <ion-text color="primary">
+            <div class="ion-text-center">"Trading, Buy & Sale, Export & Import Commodities Petroleum Oils"</div> 
+            </ion-text>  
+            <ion-button class="ion-text-center" [routerLink]="['/fcocif']" routerLinkActive="router-link-active" expand="block">
+              Find Out Now
+            </ion-button>       
+    </ion-card>
+
+    <ion-card [routerLink]="['/order']" routerLinkActive="router-link-active">
+      <img src="assets/purchase.png">
+      <ion-text color="dark">
+        <div class="ion-text-center">If you are a serious buyer, you can certainly fill it easily Our Online Purchase Form</div>
+      </ion-text>
+    </ion-card>
+
+
+    </div>
+    <ion-footer >
+      <ion-toolbar color="primary">
+        <div class="ion-text-center">Copyright © 2016 GNGROUP (M) SDN.BHD. | All Rights Reserved.</div>
+      </ion-toolbar>
+    </ion-footer>
+    </ion-content>
+  </div>
+  
+</ion-app>

@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar color="primary">
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+ </ion-buttons>
+ <ion-title class="ion-text-center">Contact</ion-title>
+ </ion-toolbar>
+</ion-header>
+
+<ion-content color="kuptm">
+  <div class="ion-padding">
+    <ion-text color="danger">
+    <p class="ion-text-center">Get In Touch</p>
+    </ion-text>
+
+    <ion-item>
+      <ion-label position="floating">Subject</ion-label>
+      <ion-input type="text" [(ngModel)]="post.subject" required></ion-input>
+      </ion-item>
+    <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input type="text" [(ngModel)]="post.name" required></ion-input>
+    </ion-item>
+    <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" placeholder="your@gmail.com" [(ngModel)]="post.email" required></ion-input>
+    </ion-item>
+   
+    <ion-item>
+    <ion-label position="floating">Message</ion-label>
+    <ion-input [(ngModel)]="post.message"></ion-input>
+    </ion-item>
+    <ion-button expand="block" color="primary" (click)="createPost(post)">
+    <ion-icon slot="start" name="send"></ion-icon>
+    Send
+    </ion-button>
+  </div>
+
+
+    <ion-card>
+      <div class="ion-padding">
+      <ion-text color="dark">
+        <h5 class="ion-text-center">GNGROUP (M) SDN. BHD. (MALAYSIA)</h5>
+      </ion-text>
+        <p>M-CITY, No. 326, Jalan Ampang,
+          50450 Kuala Lumpur, Malaysia</p>
+          <p>Tel/Fax:+60328569244</p>
+          <p>Email: sales.gngroupsb@gmail.com / export@gngroupms.com</p>
+          <p>Blog: http://gngroupoil.blogspot.com</p>
+          <p>Web: http://www.gngroupms.com</p>     
+    </div>
+    </ion-card>
+
+    <ion-card>
+      <div class="ion-padding">
+      <ion-text color="dark">
+        <h5 class="ion-text-center">GNGROUP PTE. LTD. (SINGAPORE)</h5>
+      </ion-text>
+        <p>Address: 8A, Jalan Pisang Singapore 199075</p>
+          <p>Email: sales.gngroupsb@gmail.com</p>
+          <p>Blog: http://gngms.blogspot.com</p>
+          <p>Website: http://gngroupms.com/</p>    
+    </div>
+    </ion-card>
+
+    <ion-card>
+      <div class="ion-padding">
+      <ion-text color="dark">
+        <h5 class="ion-text-center">CONTACT US VIA EMAIL:</h5>
+      </ion-text>
+        <p>Email: sales.gngroupsb@gmail.com</p>
+          <p>Email: 1mytv4u@gmail.com</p>
+          <p>Blog: http://gngmsb.blogspot.com</p>
+          <p>Website: http://gngroupms.com/</p>  
+    </div>
+    </ion-card>
+    
+
+    <ion-footer >
+      <ion-toolbar color="primary">
+        <div class="ion-text-center">Copyright © 2016 GNGROUP (M) SDN.BHD. | All Rights Reserved.</div>
+      </ion-toolbar>
+    </ion-footer>
+</ion-content>

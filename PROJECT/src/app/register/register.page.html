@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-toolbar color="tertiary" class="ion-text-center">
+
+    <ion-title>Register</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <div class="ion-padding">
+  <ion-text color="danger">
+    <p>Please fill up the enquiry and we will contact you soon</p>
+  </ion-text>
+
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" [(ngModel)]="user.email" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password" required></ion-input>
+  </ion-item>
+
+<ion-button expand="block" color="primary" (click)="register(user)">
+  <ion-icon slot="start" name="send"></ion-icon>
+  Send
+</ion-button>
+
+</div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="ion-text-center" color="tertiary">
+    <ion-title>Copyright 2021</ion-title>
+  </ion-toolbar>
+</ion-footer>

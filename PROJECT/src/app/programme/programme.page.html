@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Programme</ion-title>
+
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Degree Programme</ion-label>
+    </ion-list-header>
+ 
+   <ion-item>
+     <ion-avatar slot="start">
+       <img src="../assets/malaysia.png" />
+     </ion-avatar>
+     <ion-label>
+      <ion-button [routerLink]="['/cc101']" expand="full" fill="outline" >
+        <ion-icon slot="end" name=""></ion-icon>
+        CC101
+      </ion-button>
+     <h2>Computer Science</h2> 
+     <h3>This is a course for....</h3>
+     </ion-label>
+   </ion-item>
+ 
+   </ion-list>
+ 
+ <ion-list>
+   <ion-list-header>
+     <ion-label>Diploma</ion-label>
+   </ion-list-header>
+ 
+ <ion-item>
+   <ion-avatar slot="start">
+     <img src="../assets/malaysia.png" />
+   </ion-avatar>
+   <ion-label>
+    <ion-button [routerLink]="['/ct203']" expand="full" fill="outline" >
+      <ion-icon slot="end" name=""></ion-icon>
+      CT203
+    </ion-button>
+   <h2>Computer Science</h2> 
+   <h3>This is a course for....</h3>
+   </ion-label>
+ </ion-item>
+ 
+ </ion-list>
+  
+</ion-content>

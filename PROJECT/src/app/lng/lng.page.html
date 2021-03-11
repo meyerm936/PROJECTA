@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+ </ion-buttons>
+ <ion-title class="ion-text-center">LNG</ion-title>
+ </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div class="ion-padding">
+  
+    <ion-text color="dark">
+      <h5 class="ion-text-center">Liquefied Natural Gas (LNG)</h5>
+    </ion-text>
+    <p style="text-align: justify;">Liquefied Natural Gas (LNG) is natural gas (predominantly Methane, with some mixture of Ethane). It has been cooled down to liquid form for ease and safety of non-pressurized storage or transport. It is odorless, colorless, non–toxic and non–corrosive. Hazards include flammability after vaporization into a gaseous state, freezing and asphyxia. The liquefaction process involves removal of certain components, such as dust, acid gases, Helium, water, and heavy hydrocarbons, which could cause difficulty downstream. The natural gas is then condensed into a liquid at close to atmospheric pressure by cooling it to approximately −162 °C (−260 °F); maximum transport pressure is set at around 25 kPa (4 psi).</p>
+    <p style="text-align: justify;">Natural gas is mainly converted to LNG for transport over the seas. It is where laying pipelines is not feasible technically and economically. LNG achieves a higher reduction in volume than compressed natural gas (CNG) so that the (volumetric) energy density of LNG is 2.4 times greater than that of CNG (at 250 bar) or 60 percent that of diesel fuel. This makes LNG cost efficient in marine transport over long distances. However, CNG carrier ships can be used economically up to medium distances in marine transport. Specially designed cryogenic sea vessels (LNG carriers) or cryogenic road tankers are used for LNG transport.</p>
+    <p style="text-align: justify;">LNG is principally used for transporting natural gas to markets, where it is regasified and distributed as pipeline natural gas. It can be used in natural gas vehicle, although it is more common to design vehicles to use CNG. LNG’s relatively high cost of production and the need to store it in expensive cryogenic tanks have hindered widespread commercial use. Despite these drawbacks, on energy basis LNG production is expected to hit 10% of the global crude production by 2020. The heating value depends on the source of gas that is used and the process that is used to liquefy the gas. The range of heating value can span +/- 10 to 15 percent. A typical value of the higher heating value of LNG is approximately 50 MJ/kg or 21,500 BTU/lb.</p>
+    </div>
+    </ion-card>
+
+    <ion-card [routerLink]="['/order']" routerLinkActive="router-link-active">
+      <img src="assets/purchase.png">
+      <ion-text color="dark">
+        <div class="ion-text-center">If you are a serious buyer, you can certainly fill it easily Our Online Purchase Form</div>
+      </ion-text>
+    </ion-card>
+    
+  <ion-footer >
+    <ion-toolbar color="primary">
+      <div class="ion-text-center">Copyright © 2016 GNGROUP (M) SDN.BHD. | All Rights Reserved.</div>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
